@@ -18,7 +18,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, device/lge/g2m-common/g2m.mk)
+$(call inherit-product, device/lge/g2mini-common/g2m.mk)
 
 # Specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -28,5 +28,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGsmDevice=1 \
     telephony.lteOnCdmaDevice=0
 
-$(call inherit-product, vendor/lge/g2m-common/g2m-common-vendor.mk)
+$(call inherit-product, vendor/lge/g2m/g2m-vendor.mk)
 
