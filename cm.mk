@@ -7,6 +7,6 @@ TARGET_SCREEN_HEIGHT := 960
 
 # Release name
 PRODUCT_RELEASE_NAME := LG G2-mini
-PRODUCT_NAME := cm_d610ar
+PRODUCT_NAME := cm_g2mss
 
-$(call inherit-product, device/lge/d610ar/full_d610ar.mk)
+$(call inherit-product, device/lge/g2mss/full_g2mss.mk)
