@@ -23,8 +23,10 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-G2MINI_DTS_TARGET := msm8226-g2mss_global_com
+#G2MINI_DTS_TARGET := msm8226-g2mss_global_com
 
 TARGET_KERNEL_CONFIG := cm12_d610ar_defconfig
+
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000 --dt device/lge/g2mss/dt.img
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
